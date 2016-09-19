@@ -1,11 +1,4 @@
-package com.mupdf.libaray;
-
-import java.io.File;
-import java.io.FileFilter;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
+package com.mupdf.example;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -20,6 +13,15 @@ import android.os.FileObserver;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ListView;
+
+import com.mupdf.libaray.MuPDFActivity;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 enum Purpose {
 	PickPDF,

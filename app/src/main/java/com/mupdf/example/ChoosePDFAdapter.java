@@ -1,6 +1,4 @@
-package com.mupdf.libaray;
-
-import java.util.LinkedList;
+package com.mupdf.example;
 
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -9,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.LinkedList;
 
 public class ChoosePDFAdapter extends BaseAdapter {
 	private final LinkedList<ChoosePDFItem> mItems;

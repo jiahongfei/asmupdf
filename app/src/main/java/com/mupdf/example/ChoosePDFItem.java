@@ -1,4 +1,4 @@
-package com.mupdf.libaray;
+package com.mupdf.example;
 
 public class ChoosePDFItem {
 	enum Type {
@@ -8,7 +8,7 @@ public class ChoosePDFItem {
 	final public Type type;
 	final public String name;
 
-	public ChoosePDFItem (Type t, String n) {
+	public ChoosePDFItem(Type t, String n) {
 		type = t;
 		name = n;
 	}
