@@ -22,6 +22,22 @@ android {
         }
     }
 
-
+    lintOptions {
+        abortOnError false
+    }
 }
+
+
+//task to delete the old jar
+task deleteOldJar(type: Delete) {
+    delete 'release/AndroidPlugin.jar'
+}
+//task to export contents as jar
+task exportJar(type: Jar, dependsOn: ['build']){
+
+    archiveName = 'mupdf.jar'
+    from('build/intermediates/classes/release')
+    destinationDir = file('release/')
+}
+exportJar.dependsOn(deleteOldJar, build)
 
