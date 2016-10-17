@@ -17,3 +17,17 @@ intent.setData(uri);
 startActivityForResult(intent, 0);
 ```
 
+#混淆代码
+```Java
+#mupdf MuPDFCore不混淆,native不混淆，
+-keep public class com.mupdf.libaray.MuPDFCore{*;}
+jni中调用java文件不混淆
+-keep public class com.mupdf.libaray.OutlineItem{*;}
+-keep public class com.mupdf.libaray.TextChar{*;}
+-keep public class com.mupdf.libaray.LinkInfo{*;}
+-keep public class com.mupdf.libaray.LinkInfoInternal{*;}
+-keep public class com.mupdf.libaray.LinkInfoExternal{*;}
+-keep public class com.mupdf.libaray.LinkInfoRemote{*;}
+-keep public class com.mupdf.libaray.Annotation{*;}
+-keep public class com.mupdf.libaray.MuPDFAlertInternal{*;}
+```
